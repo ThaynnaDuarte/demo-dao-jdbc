@@ -1,5 +1,6 @@
 package io.github.thaynnaduarte.model.dao;
 
+import io.github.thaynnaduarte.Department;
 import io.github.thaynnaduarte.Seller;
 
 import java.util.List;
@@ -11,5 +12,6 @@ public interface SellerDao {
     void deleteById(Integer id);
     Seller findById(Integer id);
     List<Seller> findAll();
+    List<Seller> findByDepartment(Department department);
 
 }
